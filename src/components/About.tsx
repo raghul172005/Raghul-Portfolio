@@ -3,9 +3,9 @@ import { Award, Briefcase, GraduationCap, MapPin } from 'lucide-react'
 
 export default function About() {
   const stats = [
-    { label: 'Years of Experience', value: '3+' },
-    { label: 'Projects Completed', value: '25+' },
-    { label: 'Happy Clients', value: '10+' },
+    { label: 'Years of Experience', value: '1+' },
+    { label: 'Projects Completed', value: '5+' },
+    { label: 'Happy Clients', value: '7+' },
     { label: 'PRs Merged', value: '100+' },
   ]
 
