@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Mail, MapPin, Send, CheckCircle, MessageSquare } from 'lucide-react'
+import { Mail, MapPin, Send, CheckCircle, MessageSquare, Phone } from 'lucide-react'
 
 // Custom SVG Icons for Github and Linkedin
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -120,6 +120,18 @@ export default function Contact() {
                 <div>
                   <h4 className="text-sm font-semibold text-white">Location</h4>
                   <p className="text-sm text-gray-400 mt-1">Chennai, Tamil Nadu, India</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-5 rounded-2xl glass-card border border-white/5">
+                <div className="w-12 h-12 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center text-primary-400 flex-shrink-0">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-semibold text-white">Phone Number</h4>
+                  <a href="tel:+916369961181" className="text-sm text-gray-400 hover:text-primary-400 transition-colors mt-1 block">
+                    +91 6369961181
+                  </a>
                 </div>
               </div>
 
