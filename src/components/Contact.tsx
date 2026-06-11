@@ -140,7 +140,7 @@ export default function Contact() {
                       <GithubIcon className="w-4 h-4" />
                     </a>
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/sraghul2005/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-lg bg-dark-900 border border-white/5 text-gray-400 hover:text-white transition-colors"

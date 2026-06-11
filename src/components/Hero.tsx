@@ -133,7 +133,7 @@ export default function Hero() {
               <GithubIcon className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sraghul2005/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-xl glass-card hover:text-white transition-colors"
