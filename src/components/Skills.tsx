@@ -32,6 +32,16 @@ const skillCategories = [
     ],
   },
   {
+    title: 'DSA & Problem Solving',
+    icon: Binary,
+    skills: [
+      { name: 'Data Structures (Trees, Graphs)', level: 90 },
+      { name: 'Algorithms (DP, Greedy)', level: 86 },
+      { name: 'LeetCode Problem Solving', level: 88 },
+      { name: 'System Design Patterns', level: 78 },
+    ],
+  },
+  {
     title: 'Databases & Storage',
     icon: Database,
     skills: [
