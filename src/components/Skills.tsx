@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Layout, Server, Database, GitBranch, Coffee, Binary } from 'lucide-react'
+import { Layout, Server, Database, GitBranch, Coffee } from 'lucide-react'
 
 const skillCategories = [
   {
@@ -29,16 +29,6 @@ const skillCategories = [
       { name: 'Node.js / Express', level: 88 },
       { name: 'NestJS', level: 85 },
       { name: 'REST & GraphQL APIs', level: 90 },
-    ],
-  },
-  {
-    title: 'DSA & Problem Solving',
-    icon: Binary,
-    skills: [
-      { name: 'Data Structures (Trees, Graphs)', level: 90 },
-      { name: 'Algorithms (DP, Greedy)', level: 86 },
-      { name: 'LeetCode Problem Solving', level: 88 },
-      { name: 'System Design Patterns', level: 78 },
     ],
   },
   {
