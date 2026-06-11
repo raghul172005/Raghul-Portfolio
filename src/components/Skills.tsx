@@ -6,49 +6,49 @@ const skillCategories = [
     title: 'Frontend Development',
     icon: Layout,
     skills: [
-      { name: 'React / Next.js', level: 95 },
-      { name: 'TypeScript', level: 90 },
-      { name: 'Tailwind CSS', level: 95 },
-      { name: 'HTML5 & CSS3', level: 98 },
+      { name: 'React / Next.js', level: 95, iconClass: 'devicon-react-original colored' },
+      { name: 'TypeScript', level: 90, iconClass: 'devicon-typescript-plain colored' },
+      { name: 'Tailwind CSS', level: 95, iconClass: 'devicon-tailwindcss-original colored' },
+      { name: 'HTML5 & CSS3', level: 98, iconClass: 'devicon-html5-plain colored' },
     ],
   },
   {
     title: 'Java Full Stack',
     icon: Coffee,
     skills: [
-      { name: 'Java (Core & Advanced)', level: 92 },
-      { name: 'Spring Boot', level: 88 },
-      { name: 'Hibernate / JPA', level: 85 },
-      { name: 'Microservices Architecture', level: 82 },
+      { name: 'Java (Core & Advanced)', level: 92, iconClass: 'devicon-java-plain colored' },
+      { name: 'Spring Boot', level: 88, iconClass: 'devicon-spring-original colored' },
+      { name: 'Hibernate / JPA', level: 85, iconClass: 'devicon-hibernate-plain colored' },
+      { name: 'Microservices Architecture', level: 82, iconClass: 'devicon-java-plain' },
     ],
   },
   {
     title: 'Backend & APIs',
     icon: Server,
     skills: [
-      { name: 'Node.js / Express', level: 88 },
-      { name: 'NestJS', level: 85 },
-      { name: 'REST & GraphQL APIs', level: 90 },
+      { name: 'Node.js / Express', level: 88, iconClass: 'devicon-nodejs-plain colored' },
+      { name: 'NestJS', level: 85, iconClass: 'devicon-nestjs-plain colored' },
+      { name: 'REST & GraphQL APIs', level: 90, iconClass: 'devicon-graphql-plain colored' },
     ],
   },
   {
     title: 'Databases & Storage',
     icon: Database,
     skills: [
-      { name: 'PostgreSQL', level: 88 },
-      { name: 'MongoDB', level: 90 },
-      { name: 'Redis', level: 80 },
-      { name: 'Prisma / TypeORM', level: 85 },
+      { name: 'PostgreSQL', level: 88, iconClass: 'devicon-postgresql-plain colored' },
+      { name: 'MongoDB', level: 90, iconClass: 'devicon-mongodb-plain colored' },
+      { name: 'Redis', level: 80, iconClass: 'devicon-redis-plain colored' },
+      { name: 'Prisma / TypeORM', level: 85, iconClass: 'devicon-prisma-original' },
     ],
   },
   {
     title: 'DevOps & Tools',
     icon: GitBranch,
     skills: [
-      { name: 'Docker', level: 82 },
-      { name: 'AWS (S3, EC2, Lambda)', level: 80 },
-      { name: 'Git & GitHub Actions', level: 90 },
-      { name: 'Linux', level: 78 },
+      { name: 'Docker', level: 82, iconClass: 'devicon-docker-plain colored' },
+      { name: 'AWS (S3, EC2, Lambda)', level: 80, iconClass: 'devicon-amazonwebservices-plain-wordmark colored' },
+      { name: 'Git & GitHub Actions', level: 90, iconClass: 'devicon-git-plain colored' },
+      { name: 'Linux', level: 78, iconClass: 'devicon-linux-plain' },
     ],
   },
 ]
@@ -131,8 +131,11 @@ export default function Skills() {
                 <div className="space-y-5">
                   {category.skills.map((skill, skillIdx) => (
                     <div key={skillIdx} className="space-y-2">
-                      <div className="flex justify-between text-sm">
-                        <span className="font-medium text-gray-300">{skill.name}</span>
+                      <div className="flex justify-between items-center text-sm">
+                        <div className="flex items-center gap-2">
+                          {skill.iconClass && <i className={`${skill.iconClass} text-lg w-5 h-5 flex items-center justify-center`} />}
+                          <span className="font-medium text-gray-300">{skill.name}</span>
+                        </div>
                         <span className="text-gray-500 font-mono">{skill.level}%</span>
                       </div>
                       <div className="h-2 w-full bg-dark-900 rounded-full overflow-hidden border border-white/5">
