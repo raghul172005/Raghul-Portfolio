@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Layout, Server, Database, GitBranch, Coffee, Binary } from 'lucide-react'
+import { Layout, Server, Database, GitBranch, Coffee } from 'lucide-react'
 
 const skillCategories = [
   {
