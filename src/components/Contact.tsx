@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Mail, MapPin, Send, CheckCircle, MessageSquare } from 'lucide-react'
+import { Mail, MapPin, Send, CheckCircle, MessageSquare, Phone } from 'lucide-react'
 
 // Custom SVG Icons for Github and Linkedin
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -107,8 +107,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-white">Email Address</h4>
-                  <a href="mailto:raghul@example.com" className="text-sm text-gray-400 hover:text-primary-400 transition-colors mt-1 block">
-                    raghul@example.com
+                  <a href="mailto:raghulsridhar2005@gmail.com" className="text-sm text-gray-400 hover:text-primary-400 transition-colors mt-1 block">
+                    raghulsridhar2005@gmail.com
                   </a>
                 </div>
               </div>
@@ -124,6 +124,18 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-4 p-5 rounded-2xl glass-card border border-white/5">
+                <div className="w-12 h-12 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center text-primary-400 flex-shrink-0">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-semibold text-white">Phone Number</h4>
+                  <a href="tel:+916369961181" className="text-sm text-gray-400 hover:text-primary-400 transition-colors mt-1 block">
+                    +91 6369961181
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-5 rounded-2xl glass-card border border-white/5">
                 <div className="w-12 h-12 rounded-xl bg-accent-500/10 border border-accent-500/20 flex items-center justify-center text-accent-400 flex-shrink-0">
                   <MessageSquare className="w-5 h-5" />
                 </div>
@@ -131,7 +143,7 @@ export default function Contact() {
                   <h4 className="text-sm font-semibold text-white">Social Connections</h4>
                   <div className="flex items-center gap-3 mt-3">
                     <a
-                      href="https://github.com"
+                      href="https://github.com/raghul172005"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-lg bg-dark-900 border border-white/5 text-gray-400 hover:text-white transition-colors"
@@ -140,7 +152,7 @@ export default function Contact() {
                       <GithubIcon className="w-4 h-4" />
                     </a>
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/sraghul2005/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-lg bg-dark-900 border border-white/5 text-gray-400 hover:text-white transition-colors"
