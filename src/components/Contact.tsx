@@ -131,7 +131,7 @@ export default function Contact() {
                   <h4 className="text-sm font-semibold text-white">Social Connections</h4>
                   <div className="flex items-center gap-3 mt-3">
                     <a
-                      href="https://github.com"
+                      href="https://github.com/raghul172005"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-lg bg-dark-900 border border-white/5 text-gray-400 hover:text-white transition-colors"
