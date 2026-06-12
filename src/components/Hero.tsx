@@ -72,14 +72,7 @@ export default function Hero() {
             />
           </motion.div>
 
-          {/* Greeting Badge */}
-          <motion.div
-            variants={itemVariants}
-            className="mb-6 px-4 py-1.5 rounded-full glass-panel border border-primary-500/30 text-primary-300 text-sm font-medium tracking-wide flex items-center gap-2"
-          >
-            <span className="w-2 h-2 rounded-full bg-accent-500 animate-pulse" />
-            Available for New Opportunities
-          </motion.div>
+
 
           {/* Title */}
           <motion.h1

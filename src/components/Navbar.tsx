@@ -55,12 +55,7 @@ export default function Navbar() {
                 </a>
               )
             })}
-            <a
-              href="#contact"
-              className="ml-4 px-5 py-2.5 rounded-xl text-sm font-medium bg-gradient-to-r from-primary-500 to-secondary-500 text-white shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 hover:scale-105 active:scale-95 transition-all duration-200"
-            >
-              Hire Me
-            </a>
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,13 +95,7 @@ export default function Navbar() {
                 </a>
               )
             })}
-            <a
-              href="#contact"
-              onClick={() => setIsOpen(false)}
-              className="mt-2 w-full text-center px-5 py-3.5 rounded-xl text-base font-medium bg-gradient-to-r from-primary-500 to-secondary-500 text-white shadow-lg shadow-primary-500/25 flex items-center justify-center gap-2"
-            >
-              Hire Me
-            </a>
+
           </motion.div>
         )}
       </AnimatePresence>

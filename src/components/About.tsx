@@ -1,20 +1,13 @@
 import { motion } from 'framer-motion'
-import { Award, Briefcase, GraduationCap, MapPin } from 'lucide-react'
 
 export default function About() {
   const stats = [
     { label: 'Years of Experience', value: '1+' },
     { label: 'Projects Completed', value: '5+' },
     { label: 'Happy Clients', value: '7+' },
-    { label: 'PRs Merged', value: '100+' },
   ]
 
-  const details = [
-    { icon: MapPin, text: 'Based in Chennai, India' },
-    { icon: Briefcase, text: 'Full-Time Engineer' },
-    { icon: GraduationCap, text: 'B.E. Computer Science & Engineering' },
-    { icon: Award, text: 'Certified Cloud Associate' },
-  ]
+
 
   return (
     <section id="about" className="py-24 relative overflow-hidden bg-dark-900/50">
@@ -80,31 +73,21 @@ export default function About() {
             className="lg:col-span-7 space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-4">
-                Creative developer who bridges the gap between Design and Technology
+              <h3 className="text-2xl font-semibold text-white mb-4 font-heading">
+                Building secure, scalable, and high-performance digital solutions with a security-first mindset.
               </h3>
+              <p className="text-gray-400 leading-relaxed font-light mb-4">
+                I am a Software Engineer specializing in full-stack development, crafting performant web applications, and architecting robust API services. With a background that spans both scalable software engineering and cyber threat analysis, I bring a unique, security-focused perspective to modern software architecture.
+              </p>
               <p className="text-gray-400 leading-relaxed font-light">
-                I enjoy translating complex user needs into beautiful, modular interfaces and scalable systems. Working closely with modern frontend ecosystems and cloud-based backend services allows me to deliver polished, production-ready experiences.
+                Currently, I build core features and secure solutions at Cytrusst Intelligence Pvt Ltd, focusing on writing clean, modular code, optimizing databases, and building interactive, responsive user interfaces. I thrive on solving complex technical challenges and delivering polished, production-ready systems.
               </p>
             </div>
 
-            {/* Facts Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {details.map((detail, idx) => {
-                const Icon = detail.icon
-                return (
-                  <div key={idx} className="flex items-center gap-3 text-gray-300">
-                    <div className="w-10 h-10 rounded-lg bg-primary-500/10 border border-primary-500/20 flex items-center justify-center text-primary-500">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <span className="text-sm">{detail.text}</span>
-                  </div>
-                )
-              })}
-            </div>
+
 
             {/* Statistics */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-4 border-t border-white/5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-4 border-t border-white/5">
               {stats.map((stat, idx) => (
                 <div key={idx} className="text-center sm:text-left">
                   <h4 className="text-3xl sm:text-4xl font-extrabold text-white bg-gradient-to-tr from-primary-500 to-secondary-500 bg-clip-text text-transparent">
